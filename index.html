@@ -30,6 +30,9 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </nav>
+
+        <!-- main section -->
+         
         <div class="main">
             <div class="maintxt">
                 <h1>
@@ -38,15 +41,43 @@
                 </div>
                 <div class="mainimg">
                     <img src="image/main_img.png" alt="main img">
+                    
                 </div>
         </div>
         <p id="transition">
             YumYumHub is a convenient online platform for ordering delicious food items, including favorites like pizza, burgers, and more. Designed for food lovers, YumYumHub makes it easy to explore various menu options, customize orders, and enjoy quick delivery or pickup. Whether you're craving a classic burger, a freshly baked pizza, or other tasty bites, YumYumHub connects you with local restaurants to satisfy every craving!
         </p>
         <div class="main-btn">
-            <a href="#Order">Order Now</a>
+            <a href="#Menu">Order Now</a>
             <i class="fa-solid fa-arrow-right"></i>
         </div>
+
+
+        <!-- chat bot section -->
+
+        <section id="ai-chatbot" style="display: none;">
+            <div id="chatbot-header">
+                <h2>AI Food Chatbot</h2>
+                <button id="toggle-chatbot" class="close-btn">X</button>
+            </div>
+            <div id="chat-output"></div>
+            <div id="chat-input-container">
+                <input
+                    type="text"
+                    id="chat-input"
+                    placeholder="Enter your mood.. or your budget"
+                />
+                <button id="send-message">Send</button>
+            </div>
+        </section>
+        
+        <!-- Add this button where you want users to toggle the chatbot -->
+        <button id="toggle-chatbot" class="chatbot-toggle-btn">
+            Open Chatbot
+        </button>
+        
+
+        
     </section>
    <!-- About  -->
     <div class="about" id="About">
@@ -98,9 +129,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Burger</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹50</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -125,9 +156,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Pasta</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
-                </p>
-                <h3>₹80</h3>
+                    Delight in our handcrafted pasta, made with the finest ingredients. With rich sauces and perfectly cooked noodles, every bite is a comforting experience, bringing the authentic taste of Italian cuisine to your plate.
+                </p> 
+                <h3>₹100</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -152,9 +183,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Lasagna</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Indulge in our lasagna, a hearty masterpiece of rich, flavorful layers of pasta, creamy sauces, and premium fillings. Baked to perfection, it's comfort food at its finest.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹150</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -179,9 +210,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Sandwich</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Enjoy our fresh sandwiches, packed with delicious fillings and crisp vegetables, all nestled in soft, flavorful bread for a satisfying meal or snack that's perfect any time of the day.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹40</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -206,9 +237,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Pizza</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Experience pizza perfection with our crispy crust, rich sauce, and a generous topping of the finest ingredients. Every bite is a celebration of flavor, baked to golden, melty perfection.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹150</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -233,9 +264,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Hot Dog</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Savor our hotdogs made with premium sausages, soft buns, and flavorful toppings. A classic treat that’s perfect for any time you crave deliciousness.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹60</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -260,9 +291,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Biryani</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Relish the authentic taste of our biryani, crafted with fragrant basmati rice, aromatic spices, and succulent ingredients for a flavorful and satisfying feast, perfect for sharing or indulging solo.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹100</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -287,9 +318,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Cake</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Delight in our decadent cakes, baked to perfection with rich flavors and moist textures. Ideal for celebrations, or simply indulging your sweet tooth with a slice of heaven.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹250</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -312,11 +343,11 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             </div>
             
             <div class="menu-info">
-                <h2>Juice's</h2>
+                <h4>Mausambi ka Juice</h4>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Refresh yourself with our freshly squeezed Mausambi ka juice, bursting with natural sweetness and a tangy citrus flavor that revitalizes and hydrates, making it the perfect thirst quencher.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹40</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -341,9 +372,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Chocolate Drink</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Indulge in the luxurious taste of our chocolate drink, made with premium cocoa for a rich, creamy texture and smooth, velvety sweetness that satisfies your chocolate cravings in every sip.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹60</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -368,9 +399,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Ice Cream</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Treat yourself to our indulgent ice cream, crafted with rich ingredients for a creamy, smooth texture and a variety of delicious flavors, offering a perfect dessert to cool down and savor.
                 </p>
-                <h3>₹80</h3>
+                <h3>40</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -395,9 +426,9 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="menu-info">
                 <h2>Chocolate</h2>
                 <p>
-                    Juicy, flavorful, and made to perfection! Our burgers are crafted with premium ingredients, topped with fresh veggies, and served with your choice of sauces and add-ons. A classic favorite for every craving!
+                    Savor the irresistible richness of our premium chocolate, made from the finest cocoa beans. Its smooth, velvety texture and deep chocolate flavor provide a moment of pure indulgence in every bite.
                 </p>
-                <h3>₹80</h3>
+                <h3>₹50</h3>
                 <div class="menu-icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -421,54 +452,54 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
             <div class="gallery-img">
                 <img src="image/gallary_1.jpg">
 
-                <h3>YumYumHub</h3>
+                <h3>Sandwich</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum asperiores saepe expedita, maxime qui et perspiciatis assumenda distinctio hic nemo voluptates excepturi? Illo nemo nulla corporis ullam, atque voluptas.
+                    A sandwich is a versatile, delicious meal made by layering bread with fillings like meats, veggies, and spreads. Perfect for any time, it's simple, satisfying, and endlessly customizable
                 </p>
                 <a href="#Order" class="gallery-btn">Order Now</a>
             </div>
             <div class="gallery-img">
                 <img src="image/gallary_2.jpg">
 
-                <h3>YumYumHub</h3>
+                <h3>Cup Cake</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum asperiores saepe expedita, maxime qui et perspiciatis assumenda distinctio hic nemo voluptates excepturi? Illo nemo nulla corporis ullam, atque voluptas.
+                    A cupcake is a delightful, single-serve dessert made of moist cake topped with creamy frosting. Perfect for celebrations or a sweet treat, it's charming, versatile, and loved by all ages.
                 </p>
                 <a href="#Order" class="gallery-btn">Order Now</a>
             </div>
             <div class="gallery-img">
                 <img src="image/gallary_3.jpg">
 
-                <h3>YumYumHub</h3>
+                <h3>Chocolate cup cake</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum asperiores saepe expedita, maxime qui et perspiciatis assumenda distinctio hic nemo voluptates excepturi? Illo nemo nulla corporis ullam, atque voluptas.
+                    A cupcake is a delightful, single-serve dessert made of moist cake topped with creamy frosting. Perfect for celebrations or a sweet treat, it's charming, versatile, and loved by all ages.
                 </p>
                 <a href="#Order" class="gallery-btn">Order Now</a>
             </div>
             <div class="gallery-img">
                 <img src="image/gallary_4.jpg">
 
-                <h3>YumYumHub</h3>
+                <h3>Brownie</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum asperiores saepe expedita, maxime qui et perspiciatis assumenda distinctio hic nemo voluptates excepturi? Illo nemo nulla corporis ullam, atque voluptas.
+                    Delight in fluffy, golden-brown pancakes made with the finest ingredients. Perfect for breakfast or brunch, our pancakes are served with syrup, fresh toppings, and a touch of sweetness!
                 </p>
                 <a href="#Order" class="gallery-btn">Order Now</a>
             </div>
             <div class="gallery-img">
                 <img src="image/gallary_5.jpg">
 
-                <h3>YumYumHub</h3>
+                <h3>Pizza</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum asperiores saepe expedita, maxime qui et perspiciatis assumenda distinctio hic nemo voluptates excepturi? Illo nemo nulla corporis ullam, atque voluptas.
+                    Savor the perfect pizza with a crispy crust, rich tomato sauce, and melted cheese. Choose from classic flavors or unique toppings for a mouthwatering experience, crafted to satisfy every craving.
                 </p>
                 <a href="#Order" class="gallery-btn">Order Now</a>
             </div>
             <div class="gallery-img">
                 <img src="image/gallary_6.jpg">
 
-                <h3>YumYumHub</h3>
+                <h3>Pancakes</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum asperiores saepe expedita, maxime qui et perspiciatis assumenda distinctio hic nemo voluptates excepturi? Illo nemo nulla corporis ullam, atque voluptas.
+                    Indulge in rich, fudgy brownies made with premium ingredients, offering the perfect balance of chocolatey goodness and moist texture. Ideal for satisfying sweet cravings or celebrating special moments.
                 </p>
                 <a href="#Order" class="gallery-btn">Order Now</a>
             </div>
@@ -507,18 +538,18 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore facilis quia quibusdam velit nihil vero quos doloremque praesentium, nesciunt, assumenda ullam commodi id architecto totam molestiae reprehenderit recusandae molestias.
+                    <p style="font-size: 14px;">
+                        My food odering expirence from yumyumhub was a culinary delight! I ordered the signature burger, which was cooked to perfection. The patty was juicy, and the toppings were fresh. The fries were crispy, and the service was attentive,fast and food was fell packed. Their website is very convenient and catchy as it has special feature/option in which it will suggest the foods according to our mood . Overall, I'd highly recommend ordering food from yumyumhub .
                     </p>
                 </div>
             </div>
             <div class="review-card">
                 <div class="review-profile">
-                    <img src="image/my pic.jpg">
+                    <img src="image/review_3.png">
                 </div>
 
                 <div class="review-txt">
-                    <h2 class="name">Anuj Gope</h2>
+                    <h2 class="name">shreya</h2>
 
                     <div class="review-icon">
                         <i class="fa-solid fa-star"></i>
@@ -536,17 +567,17 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
                     </div>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore facilis quia quibusdam velit nihil vero quos doloremque praesentium, nesciunt, assumenda ullam commodi id architecto totam molestiae reprehenderit recusandae molestias.
+                        I recently ordered food from yumyumhub, and it exceeded my expectations! The pasta dish was incredible, . The service was top-notch, and the packaging was good too,in the end their food played a major role and it made it perfect movie night with friends.
                     </p>
                 </div>
             </div>
             <div class="review-card">
                 <div class="review-profile">
-                    <img src="image/my pic.jpg">
+                    <img src="image/review_2.png">
                 </div>
 
                 <div class="review-txt">
-                    <h2 class="name">Anuj Gope</h2>
+                    <h2 class="name">harsh</h2>
 
                     <div class="review-icon">
                         <i class="fa-solid fa-star"></i>
@@ -564,17 +595,19 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
                     </div>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore facilis quia quibusdam velit nihil vero quos doloremque praesentium, nesciunt, assumenda ullam commodi id architecto totam molestiae reprehenderit recusandae molestias.
+                        I recently ordered dinner online from yumyumhub, and I was pretty impressed with the whole experience. The website was easy to navigate, and I loved how clear the menu was with detailed descriptions and photos of each dish. I decided to try the sandwich and an icecream . The delivery was quick, arriving within 30 minutes, and everything was packaged neatly to   avoid spills.
+
+
                     </p>
                 </div>
             </div>
             <div class="review-card">
                 <div class="review-profile">
-                    <img src="image/my pic.jpg">
+                    <img src="image/review_1.png">
                 </div>
 
                 <div class="review-txt">
-                    <h2 class="name">Anuj Gope</h2>
+                    <h2 class="name">Sanjana</h2>
 
                     <div class="review-icon">
                         <i class="fa-solid fa-star"></i>
@@ -592,7 +625,7 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
                     </div>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore facilis quia quibusdam velit nihil vero quos doloremque praesentium, nesciunt, assumenda ullam commodi id architecto totam molestiae reprehenderit recusandae molestias.
+                        The website was easy to use, and I appreciated the variety of options available. I went for their signature burger and a Lasagna. The order arrived in just under 40 minutes, and everything was still hot and fresh.  Overall, it was a great experience, and I'll be making this a regular go-to for online orders!
                     </p>
                 </div>
             </div>
@@ -693,6 +726,6 @@ At YumYumHub, our mission is simple: to bring you the meals you love, with a lev
         <p class="end"><i class="fa-regular fa-copyright"></i>Design by<span>Anuj</span></p>
      </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
